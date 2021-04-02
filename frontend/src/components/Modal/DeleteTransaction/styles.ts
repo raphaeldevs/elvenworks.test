@@ -67,6 +67,14 @@ export const Field = styled.span`
 
     color: var(--text-title);
 
+    &.withdraw {
+      color: var(--red);
+    }
+
+    &.deposit {
+      color: var(--green);
+    }
+
     font-size: 1.1rem;
 
     img {

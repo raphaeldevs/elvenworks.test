@@ -90,24 +90,24 @@ export function DeleteTransactionModal() {
 
           <Field>
             <h5>Valor</h5>
-            <span color={type}>
+            <span className={type}>
               {type === 'deposit' ? (
                 <img src={incomeImg} alt="Seta vermelha para baixo" />
               ) : (
                 <img src={outcomeImg} alt="Seta verde para cima" />
               )}
-              {formatMoney(amount)}
+              {type === 'deposit' ?  formatMoney(amount) : formatMoney(amount * -1)}
             </span>
           </Field>
 
           <Field>
             <h5>Categoria</h5>
-            <span color={type}>{category}</span>
+            <span>{category}</span>
           </Field>
 
           <Field>
             <h5>Data</h5>
-            <span color={type}>{date && formatDate(date)}</span>
+            <span>{date && formatDate(date)}</span>
           </Field>
         </FieldGroup>
 
