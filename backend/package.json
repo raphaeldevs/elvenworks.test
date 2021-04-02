@@ -1,0 +1,24 @@
+{
+  "name": "elven_works.backend",
+  "scripts": {
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "@types/uuid": "^8.3.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.32",
+    "uuid": "^8.3.2"
+  }
+}
