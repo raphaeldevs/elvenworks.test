@@ -52,7 +52,7 @@ yarn dev # ou npm run dev
 
 `💡 O servidor vai rodar na porta 1901`
 
-### Configurando front end
+### Configurando front end (abra outro terminal)
 
 1. Acessar pasta e instalar dependências
 
@@ -62,6 +62,11 @@ cd frontend
 yarn # ou npm i
 ```
 
-2. Abrir navegador no endereço `localhost:3000`
+2. Iniciar servidor de desenvolvimento
+```bash
+yarn start
+```
+
+3. Abrir navegador no endereço `localhost:3000`
 
 Pronto, agora pode usar! 🥳
